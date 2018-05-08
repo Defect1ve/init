@@ -1,0 +1,1 @@
+sudo du -sh /var/agentx /var/at /var/audit /var/backups /var/db /var/empty /var/folders /var/install /var/jabberd /var/lib /var/log /var/ma /var/mail /var/msgs /var/netboot /var/networkd /var/root /var/rpc /var/run /var/rwho /var/spool /var/tmp /var/vm /var/yp

@@ -1,0 +1,4 @@
+crontab -l > fcron
+echo "00 04 * * 1 sudo apt-get update && upgrade > /var/log/update_script.log" >> fcron
+crontab fcron
+rm fcron

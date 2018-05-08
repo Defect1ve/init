@@ -1,0 +1,8 @@
+crontab -l > cron
+echo "00 00 * * * \
+	temp = \"cat /etc/crontab.log\" ; && \
+	if ($temp != (md5sum /etc/crontab.log)); then \
+			md5sum /etc/crontab > /etc/crontab.log && \
+			echo \"Your file was modified\" | mail -s \"/etc/crontab was modified\" root ; fi" >> cron
+crontab cron
+rm cron
